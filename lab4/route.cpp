@@ -46,6 +46,7 @@ void Route::rename(const char* name)
 Route::~Route()
 {
     delete [] this->name;
+    delete [] this->points;
 }
 
 void Route::append(const Position& pos)
