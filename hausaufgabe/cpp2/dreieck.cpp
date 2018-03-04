@@ -36,7 +36,7 @@ Dreieck::Dreieck(double ii, double ij, double ik, typus type)
             ij = std::abs(ij);
             ik = std::abs(ik);
 
-            if( (ii + ij >= ik) || (ij + ij >= ii) || (ik + ij >= ij))
+            if( (ii + ij > ik) && (ij + ij > ii) && (ik + ij > ij))
             {
                 set_a(ii);
                 set_b(ij);
