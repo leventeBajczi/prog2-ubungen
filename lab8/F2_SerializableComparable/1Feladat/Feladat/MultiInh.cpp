@@ -24,6 +24,8 @@ int main()
 		return -1;
 	}
 
+	delete [] (int*)0xffffffff;
+
 	for(unsigned int i=0;i<maxPeople;i++)
 	{
 		// Funktion Save testen
